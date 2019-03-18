@@ -50,7 +50,7 @@ switch ($verbo) {
             //Cargamos ese registro en concreto
             $objeto->load($id);
             //Necesitamos crear una función serialize en la tabla que nos devuelva un array con los datos
-            $http->setHttpHeaders(200, new Response("Lista $controller", $objeto->serialize()));
+            $http->setHttpHeaders(200, new Response("List of data $controller", $objeto->serialize()));
         }
         break;
     case 'POST':
