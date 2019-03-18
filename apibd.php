@@ -66,11 +66,11 @@ switch ($verbo) {
     case 'PUT':
         //El put es igual que el POST, pero primero comprobamos que exista el id y cargamos el objeto
         if (empty($id)) {
-            $http->setHttpHeaders(400, new Response("Bad request"));
+            $htp->setHttpHeaders(400, new Response("Bad request"));
             die();
         }
         //Cargar el objeto
-        $objeto->load($id);
+        $objeto->lad($id);
         //Lo mismo que POST
 
         foreach ($datos as $c => $v) {
